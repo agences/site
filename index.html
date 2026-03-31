@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippe Ricouard - Marchand de Biens Immobiliers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+        }
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .floating-button {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">PR</div>
+                    <span class="font-semibold text-gray-900 text-lg">Philippe Ricouard</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                    <a href="#apropos" class="text-gray-700 hover:text-blue-600 transition">À propos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Transformation immobilière avec expertise</h1>
+                    <p class="text-xl mb-8">Je redonne vie aux propriétés pour créer de la valeur et des opportunités.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Contactez-moi</a>
+                        <a href="#services" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition duration-300">Mes services</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <!-- Replace with your actual photo -->
+                        <img src="foto.jpg" alt="Philippe Ricouard" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Mes Domaines d'Expertise</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Biens immobiliers" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Achat & Revente de Biens</h3>
+                        <p class="text-gray-600">Appartements, maisons, boutiques et immeubles déjà construits, rénovés et optimisés.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Terrains à bâtir" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Terrains à Bâtir</h3>
+                        <p class="text-gray-600">Identification et acquisition de terrains avec fort potentiel de valorisation.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Parts sociales SCI" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Parts Sociales de SCI</h3>
+                        <p class="text-gray-600">Transactions sur les parts de sociétés civiles immobilières à fort potentiel.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fonds de commerce" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Fonds de Commerce</h3>
+                        <p class="text-gray-600">Acquisition et revente de fonds de commerce dans tous les secteurs d'activité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Philippe Ricouard</h2>
+                    <p class="text-gray-600 mb-4">Franco-Canadien basé au Havre, j'ai évolué du métier de gestionnaire de patrimoine à celui de marchand de biens, une transition naturelle pour celui qui a toujours eu la passion de l'immobilier et du potentiel caché des propriétés.</p>
+                    <p class="text-gray-600 mb-4">Mon expertise repose sur trois piliers :</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-5 h-5 bg-blue-600 rounded-full"></div>
+                            </div>
+                            <p class="ml-3 text-gray-600">Un œil aiguisé pour repérer les bonnes affaires sous-évaluées</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-5 h-5 bg-blue-600 rounded-full"></div>
+                            </div>
+                            <p class="ml-3 text-gray-600">Un réseau solide de professionnels et d'opportunités</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-5 h-5 bg-blue-600 rounded-full"></div>
+                            </div>
+                            <p class="ml-3 text-gray-600">Un talent de négociateur forgé par des années d'expérience</p>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600">Chaque projet est une nouvelle aventure où je mets à profit mes compétences pour transformer des biens délaissés en véritables pépites immobilières.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Replace with your actual photos -->
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Projet 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Projet 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Projet 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Projet 4" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Ma Méthode de Travail</h2>
+                <p class="text-xl text-gray-600">Comment je transforme des opportunités en réussites immobilières</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-blue-100 transform -translate-x-1/2"></div>
+                
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row items-center mb-16">
+                    <div class="md:w-1/2 md:pr-10 mb-8 md:mb-0">
+                        <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-3">1. Identification des Opportunités</h3>
+                            <p class="text-gray-600">Grâce à mon réseau et mon expertise du marché, je repère des biens sous-évalués avec un fort potentiel de valorisation après rénovation.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center md:justify-start">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg">1</div>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="flex flex-col md:flex-row items-center mb-16">
+                    <div class="md:w-1/2 order-2 md:order-1 flex justify-center md:justify-end">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg">2</div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-10 order-1 md:order-2 mb-8 md:mb-0">
+                        <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-3">2. Négociation et Acquisition</h3>
+                            <p class="text-gray-600">Je négocie le meilleur prix d'acquisition en mettant en avant mon sérieux et ma rapidité d'exécution, atouts appréciés des vendeurs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row items-center mb-16">
+                    <div class="md:w-1/2 md:pr-10 mb-8 md:mb-0">
+                        <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-3">3. Rénovation et Valorisation</h3>
+                            <p class="text-gray-600">Je supervise des travaux ciblés qui maximisent la plus-value, en travaillant avec des artisans qualifiés que j'ai sélectionnés au fil des années.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center md:justify-start">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg">3</div>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 order-2 md:order-1 flex justify-center md:justify-end">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg">4</div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-10 order-1 md:order-2 mb-8 md:mb-0">
+                        <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-3">4. Commercialisation et Vente</h3>
+                            <p class="text-gray-600">Je mets en valeur le bien rénové auprès d'une clientèle ciblée, en utilisant des arguments de vente solides et un marketing adapté.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6">Contactez-moi</h2>
+                    <p class="text-gray-300 mb-6">Vous avez un bien à vendre ou cherchez des opportunités d'investissement ? Discutons de votre projet.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt text-blue-400"></i>
+                            </div>
+                            <p class="ml-3 text-gray-300">222 Av. du Mont Gaillard, 76620 Le Havre, France</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-envelope text-blue-400"></i>
+                            </div>
+                            <p class="ml-3 text-gray-300">philric12@gmail.com</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-phone-alt text-blue-400"></i>
+                            </div>
+                            <p class="ml-3 text-gray-300">+33 (0)X XX XX XX XX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Suivez-moi</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-300 mb-2">Nom complet</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-300 mb-2">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="#contact" class="floating-button w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-xl hover:bg-blue-700 transition duration-300">
+            <i class="fas fa-envelope text-xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-2">PR</div>
+                        <span class="font-semibold">Philippe Ricouard</span>
+                    </div>
+                </div>
+                <div class="text-sm">
+                    <p>&copy; 2023 Philippe Ricouard - Marchand de Biens. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle would go here
+        // For simplicity, we're not implementing it in this example
+    </script>
+</body>
+</html>
